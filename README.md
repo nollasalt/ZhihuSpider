@@ -1,9 +1,5 @@
 # 知乎爬虫
-使用requests，json来获取、解析数据。
-使用datetime获取时间。
-使用apscheduler设置定时任务。
-使用os，openpyxl来实现写入xlsx。
-
+获取知乎热榜各榜单数据
 # 开发者的碎碎念
 开始只会解析html，先爬的https://www.zhihu.com/billboard
 但是发现这个网页的html不含有链接，就换了https://www.zhihu.com/hot
