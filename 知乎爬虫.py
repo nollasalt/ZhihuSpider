@@ -5,7 +5,7 @@ import datetime
 import openpyxl
 import os
 sched = BlockingScheduler()
-#定时任务
+
 @sched.scheduled_job('interval', hours=1)
 def timed_job():
     headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'}
@@ -50,7 +50,6 @@ def timed_job():
             cla.append(json['domains'][i]['items'][j]['name'])
     ti = datetime.datetime.now()
     time_hot = str(ti.month) + '月' + str(ti.day) + '日 ' + str(ti.hour) + '时' + str(ti.minute) + '分'
-    time_file = str(ti.month) + '月' + str(ti.day) + '日 ' + str(ti.hour) + '时'
     file_path = './知乎热榜_Second' + time_hot + '.xlsx'
     if not os.path.exists(file_path):
         wb = openpyxl.Workbook()
