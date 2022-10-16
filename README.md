@@ -1,4 +1,8 @@
 # 知乎爬虫
+使用requests，json来获取、解析数据
+使用datetime获取时间
+使用apscheduler设置定时任务
+使用os，openpyxl来实现写入xlsx
 
 # 开发者的碎碎念
 开始只会解析html，先爬的https://www.zhihu.com/billboard
