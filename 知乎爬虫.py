@@ -50,7 +50,6 @@ def timed_job():
             cla.append(json['domains'][i]['items'][j]['name'])
     ti = datetime.datetime.now()
     time_hot = str(ti.month) + '月' + str(ti.day) + '日 ' + str(ti.hour) + '时' + str(ti.minute) + '分'
-    time_file = str(ti.month) + '月' + str(ti.day) + '日 ' + str(ti.hour) + '时'
     file_path = './知乎热榜_Second' + time_hot + '.xlsx'
     if not os.path.exists(file_path):
         wb = openpyxl.Workbook()
