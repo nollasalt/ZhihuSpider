@@ -1,6 +1,6 @@
 # 知乎爬虫
 获取知乎热榜各榜单数据，需要下载支持库openpyxl、datetime、requests、apscheduler.启动程序后在每个整点获取热榜信息
-# 开发者的碎碎念
+# 感想
 开始只会解析html，先爬的https://www.zhihu.com/billboard
 但是发现这个网页的html不含有链接，就换了https://www.zhihu.com/hot
 可是明明print(html)的时候不含有我要的数据，但是用正则表达式匹配时又能得到数据，没解决，只有零星的猜想。
